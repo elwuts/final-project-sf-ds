@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 from scipy import stats
 
-file_path = r'E:\SKILLFACTORY\SF\dataSF\finalproject\data\data_cleaned_panel.xlsx'
+file_path = r'data\data_cleaned_panel.xlsx'
 df = pd.read_excel(file_path, sheet_name='Sheet1')
 
 print("=== АНАЛИЗ ФАКТОРОВ ВЛИЯНИЯ НА ЗАКРЕДИТОВАННОСТЬ ===")
@@ -142,4 +142,5 @@ print(f"Признаков с важностью > 0.01: {len(importance_df[impo
 print(f"Признаков с важностью > 0.05: {len(importance_df[importance_df['Важность'] > 0.05])}")
 
 print(f"\nВЫВОД: Модель показывает наличие значимых факторов влияния")
+
 print(f"на закредитованность компаний.")
