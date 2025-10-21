@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Загрузка данных
-file_path = r'E:\SKILLFACTORY\SF\dataSF\finalproject\data\data 2task.xlsx'
+file_path = r'data\data 2task.xlsx'
 df = pd.read_excel(file_path, sheet_name='report')
 
 print("=== НАЧАЛО ОЧИСТКИ ДАННЫХ ===")
@@ -94,7 +94,8 @@ print(f"Компаний с долгом: {df_clean['есть_долг'].sum()} 
 print(f"Средний размер займа: {df_clean['заемные_средства'].median():,.0f} RUB")
 
 # Сохранение очищенных данных
-output_path = r'E:\SKILLFACTORY\SF\dataSF\finalproject\data\data_cleaned_panel.xlsx'
+output_path = r'data\data_cleaned_panel.xlsx'
 df_clean.to_excel(output_path, index=False)
 print(f"\n✅ ОЧИЩЕННЫЕ ДАННЫЕ СОХРАНЕНЫ: {output_path}")
+
 print(f"✅ ГОТОВО К АНАЛИЗУ! Используйте файл: data_cleaned_panel.xlsx")
