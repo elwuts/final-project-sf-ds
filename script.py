@@ -15,7 +15,7 @@ print("АНАЛИЗ: СВЯЗЬ ЧИСЛЕННОСТИ И МАТЕРИАЛЬНО
 print("═" * 70)
 
 # Загрузка данных
-file_path = r"E:\SKILLFACTORY\SF\dataSF\finalproject\data\data 1task.xlsx"
+file_path = r"data\data 1task.xlsx"
 df = pd.read_excel(file_path, sheet_name='report2')
 
 print("📊 Загружены данные:")
@@ -157,4 +157,5 @@ else:
 
 print("\n" + "═" * 70)
 print("✅ АНАЛИЗ ЗАВЕРШЕН! Результаты сохранены в файл 'анализ_связи_численность_благосостояние.png'")
+
 print("═" * 70)
