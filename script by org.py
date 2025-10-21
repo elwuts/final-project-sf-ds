@@ -6,7 +6,7 @@ from scipy import stats
 import warnings
 
 # Загрузка данных
-file_path = "E:\\SKILLFACTORY\\SF\\dataSF\\finalproject\\data\\data 1task.xlsx"
+file_path = "\data\data 1task.xlsx"
 df = pd.read_excel(file_path, sheet_name='report5')
 
 # Предобработка
@@ -188,4 +188,5 @@ print(f"\nОБЩАЯ СТАТИСТИКА:")
 for org_type in org_types:
     org_data = df_clean[df_clean['Организационно-правовая форма'] == org_type]
     if len(org_data) > 0:
+
         print(f"{org_type}: {len(org_data)} организаций")
