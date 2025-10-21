@@ -16,7 +16,7 @@ print("═" * 70)
 
 # Загрузка данных
 file_path = r"E:\SKILLFACTORY\SF\dataSF\finalproject\data\data 1task.xlsx"
-df = pd.read_excel(file_path, sheet_name='report2')
+df = pd.read_excel(file_path, sheet_name='report3')
 
 print("📊 Загружены данные:")
 print(f"   Размер: {df.shape}")
