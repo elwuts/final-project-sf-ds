@@ -15,7 +15,7 @@ print("АНАЛИЗ: РЕГИОНАЛЬНЫЕ РАЗЛИЧИЯ СВЯЗИ ЧИС
 print("═" * 70)
 
 # Загрузка данных
-file_path = r"E:\SKILLFACTORY\SF\dataSF\finalproject\data\data 1task.xlsx"
+file_path = r"data\data 1task.xlsx"
 df = pd.read_excel(file_path, sheet_name='report4')
 
 print("📊 Загружены данные:")
@@ -200,4 +200,5 @@ else:
 
 print("\n" + "═" * 70)
 print("✅ РЕГИОНАЛЬНЫЙ АНАЛИЗ ЗАВЕРШЕН!")
+
 print("═" * 70)
