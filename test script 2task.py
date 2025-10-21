@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import r2_score, mean_squared_error
 
-file_path = r'E:\SKILLFACTORY\SF\dataSF\finalproject\data\data_cleaned_panel.xlsx'
+file_path = r'data\data_cleaned_panel.xlsx'
 df = pd.read_excel(file_path, sheet_name='Sheet1')
 
 print("=== КОРРЕКТНЫЙ АНАЛИЗ ФАКТОРОВ ВЛИЯНИЯ НА ЗАКРЕДИТОВАННОСТЬ ===")
@@ -207,5 +207,6 @@ print(f"\nОСНОВНЫЕ ЗАКОНОМЕРНОСТИ:")
 print(f"- Региональные особенности: {regional_importance:.1%} влияния")
 print(f"- Тип организации: {opf_importance:.1%} влияния") 
 print(f"- Финансовые показатели: {financial_importance:.1%} влияния")
+
 
 print(f"\nСТАТУС: Модель успешно построена и проанализирована")
